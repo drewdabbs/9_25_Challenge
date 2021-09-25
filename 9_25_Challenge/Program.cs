@@ -47,8 +47,24 @@ namespace _9_25_Challenge
 
 
 
-            Console.ReadKey();
+            
 
+
+            // or
+
+            // Severa Cox's code
+
+            string superCopy = "Supercalifragilisticexpialidocious";
+            string superLongWord = superCopy.ToLower();
+            foreach(char letter in superLongWord)
+            {
+                Console.WriteLine(letter);
+            }
+            foreach(char letter in superLongWord)
+            {
+                var writeLine = (letter == 'i') ? "i" : "not and i";
+                Console.WriteLine(writeLine);
+            }
 
 
             // Silver:
@@ -56,6 +72,12 @@ namespace _9_25_Challenge
             // (do this with code, not by counting manually and hard-coding the number).
 
             // Suggestions?
+
+            // Severa Cox's code
+
+            Console.WriteLine(superLongWord.Length);
+
+
 
 
 
@@ -67,6 +89,14 @@ namespace _9_25_Challenge
             // If char = 'l'; Console.WriteLine(l);
             // Else Console.WriteLine("Not an 'i' or a 'l'.)
 
+            // Severa Cox's code
+
+            foreach (char letter in superLongWord)
+            {
+                var writeLine = (letter == 'i' || letter == 'l') ? letter.ToString() : "not and i";
+                Console.WriteLine(writeLine);
+            }
+            Console.ReadKey();
 
         }
     }
